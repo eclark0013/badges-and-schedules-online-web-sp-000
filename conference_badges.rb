@@ -26,4 +26,7 @@ def printer(attendees)
   intro_list.each do |intro|
     puts intro
   end
+  assign_rooms(attendees).each do |room_assignment|
+    puts room_assignment
+  end 
 end
