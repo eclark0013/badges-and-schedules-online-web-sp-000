@@ -12,7 +12,12 @@ intro_list=[]
 end
 
 def assign_rooms(attendees)
-  attendees
+  rooms_list=[]
+  counter =1
+  attendees.each do |person|
+    rooms_list << "Hello, #{person}! You'll be assigned to room #{counter}!"
+    counter+=1
+  end 
 end
 
 def printer(attendees)
